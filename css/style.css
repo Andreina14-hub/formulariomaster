@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: pasifico;
+  src: url("../fonts/Pacifico-Regular.ttf");
+}
+body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/803938-flower-wallpaper.jpg);
+  background-repeat: no-repeat;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  width: 94rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.font {
+  font-family: pasifico;
+}
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo,
+main,
+footer {
+  border: 10px solid transparent;
+  border-image: url(../img/golden_european_pattern_background_image_169444.jpg)
+    30% round;
+}
+.titulo,
+footer,
+.form {
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.859);
+  width: 57rem;
+}
+main {
+  display: flex;
+  width: 57rem;
+}
+.vista {
+  width: 50rem;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+}
+figure {
+  width: 24rem;
+  height: 24rem;
+  padding: 2rem;
+}
+figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  text-align: justify;
+  border-spacing: 1rem;
+}
+.parrafo {
+  padding-top: 5rem;
+}
+.form,
+fieldset {
+  padding: 0.5rem;
+}
+.ramos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.ramos > div {
+  margin: 0.5rem;
+}
+.elige {
+  display: flex;
+  flex-direction: column;
+  height: 4rem;
+  justify-content: space-around;
+}
+.color {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.area {
+  display: flex;
+  flex-direction: column;
+}
+.datos {
+  width: 20rem;
+}
+.datos > .required {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0.5rem;
+}
+.line {
+  display: flex;
+  width: 24rem;
+}
+.area,
+.line,
+.space,
+button {
+  margin: 0.5rem;
+}
+.boton {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  margin: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+footer > div {
+  padding: 0.5rem;
+}

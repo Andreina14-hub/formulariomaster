@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="import" href="fonts/Pacifico-Regular.ttf">
+    <script src="js/index.js"></script>
+
+    <title>Flowers</title>
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <h1 class="font">Flores a domicilio</h1>
+        </div>
+    </header>
+    <main>
+        <div class="vista">
+            <figure>
+                <img src="./img/rosas_rojas.jpg" alt="ramo de rosas" width="400" height="400" id="img">
+            </figure>
+            <figcaption>
+                <h2>Tu pedido</h2>
+                <p>Ramo de rosas</p>
+                <p class="parrafo">Todas nuestras Flores y plantas son confeccionados en el día de la entrega.
+                    Envío de flores a cualquier punto de la península:ramos de flores, rosas.cestas y centros de flores
+                    y
+                    plantas, además de todo tipo de arreglos florales.</p>
+                <br>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas autem, amet minima similique deserunt
+                    modi
+                    magnam nam expedita sapiente inventore officiis provident earum velit ea repudiandae cum culpa
+                    quaerat
+                    aspernatur.</p>
+            </figcaption>
+        </div>
+        <div class="form">
+            <form action="" method="get">
+                <fieldset>
+                    <legend class="font">Ramos</legend>
+                    <div class="ramos">
+                        <div>
+                            <input type="radio" name="rosas" id="red" checked onclick=onClickCheckBox(this)>
+                            <label for="rosas rojas">Rosas rojas</label>
+                        </div>
+                        <div> <input type="radio" name="rosas" id="pink" onclick=onClickCheckBox(this)>
+                            <label for="rosas rosa">Rosas rosas</label>
+                        </div>
+                        <div><input type="radio" name="rosas" id="yellow" onclick=onClickCheckBox(this)>
+                            <label for="rosas amarillas">Rosas amarillas</label>
+                        </div>
+                        <div> <input type="radio" name="rosas" id="white" onclick=onClickCheckBox(this)>
+                            <label for="rosas blancas">Rosas blancas</label>
+                        </div>
+                        <div> <input type="radio" name="rosas" id="multicolor" onclick=onClickCheckBox(this)>
+                            <label for="rosas multicolor">Rosas multicolor</label>
+                        </div>
+                    </div>
+                    <div class="elige">
+                        <div>
+                            <label for="color">Elige el color de la tarjeta y los complementos que deaseas
+                                añadir:</label>
+                        </div>
+                        <div class="color">
+                            <input type="color" name="check-color" id="colors">
+                            <div>
+                                <input type="checkbox" name="tarjeta" checked><label for="tarjeta">Tarjeta</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="jarron"><label for="jarron">Jarrón</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="cesta"><label for="cesta">Cesta</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="area">
+                        <label for="textarea">Escribe tu dedicatoria:</label>
+                        <textarea name="dedicatoria" id="" cols="30" rows="10" maxlength="250"></textarea>
+                        <caption>(Max. 250 caractereres)</caption>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="font">Tus datos</legend>
+                    <div class="datos">
+                        <div class="required">
+                            <label for="nombre">Nombre:<span>*</span></label>
+                            <input type="text" name="nombre" id="nombre" required>
+                        </div>
+                        <div class="required">
+                            <label for="apellidos">Apellidos:<span>*</span></label>
+                            <input type="text" name="apellidos" id="" required>
+                        </div>
+                        <div class="line">
+                            <div class="telefon">
+                                <label for="telefono">Teléfono:<span>*</span></label>
+                                <input type="tel" name="telefono" id="" required>
+                            </div>
+                            <div>
+                                <label for="email">Email:</label>
+                                <input type="email" name="email" placeholder="ej:nombre@tuemail.com">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="font">Entregar a</legend>
+                    <div class="datos">
+                        <div class="required">
+                            <label for="nombre">Nombre:<span>*</span></label>
+                            <input type="text" name="nombre" id="nombre" required>
+                        </div>
+                        <div class="required">
+                            <label for="apellidos">Apellidos:<span>*</span></label>
+                            <input type="text" name="apellidos" id="" required>
+                        </div>
+                        <div class="line">
+                            <div>
+                                <label for="addres">Dirección de envío:<span>*</span></label>
+                                <input type="text">
+                            </div>
+                            <div>
+                                <label for="">Código postal:<span>*</span></label>
+                                <input type="number">
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div><label for="">Población:<span>*</span></label>
+                                <input type="text">
+                            </div>
+                            <div><label for="">Provincia:<span>*</span></label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div><label for="fecha">Fecha de entrega:<span>*</span></label>
+                                <input type="date">
+                            </div>
+                            <div>
+                                <label for="tiempo">Horario de entrega:</label>
+                                <select name="" id="">
+                                    <option value="Mañana">Mañana</option>
+                                    <option value="Tarde">Tarde</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="font">pagos</legend>
+                    <div class="datos">
+                        <label for="pagos">Elige la forma de pago:</label>
+                        <div class="line">
+                            <div class="space">
+                                <input type="radio" name="paypal" id="paypal">
+                                <label for="">Paypal</label>
+                            </div>
+                            <div class="space">
+                                <input type="radio" name="tarjeta" id="tarjeta">
+                                <label for="">Tarjeta</label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="botones">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Borrar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p>&#169; 2005 Esperanza Ortega</p>
+        </div>
+    </footer>
+</body>
+
+</html>
