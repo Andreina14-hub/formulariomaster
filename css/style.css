@@ -48,6 +48,8 @@ footer,
 main {
   display: flex;
   width: 57rem;
+  flex-direction: row;
+  justify-content: center;
 }
 .vista {
   width: 50rem;
