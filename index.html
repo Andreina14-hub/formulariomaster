@@ -37,26 +37,27 @@
                     quaerat
                     aspernatur.</p>
             </figcaption>
+        </figure>
         </div>
         <div class="form">
-            <form action="" method="get">
+            <form action="data.php" method="post">
                 <fieldset>
                     <legend class="font">Ramos</legend>
                     <div class="ramos">
                         <div>
-                            <input type="radio" name="rosas" id="red" checked onclick=onClickCheckBox(this)>
+                            <input type="radio" name="rosas" id="red" checked onclick=onClickCheckBox(this) value="Rosas rojas">
                             <label for="rosas rojas">Rosas rojas</label>
                         </div>
-                        <div> <input type="radio" name="rosas" id="pink" onclick=onClickCheckBox(this)>
+                        <div> <input type="radio" name="rosas" id="pink" onclick=onClickCheckBox(this) value="Rosas rosas">
                             <label for="rosas rosa">Rosas rosas</label>
                         </div>
-                        <div><input type="radio" name="rosas" id="yellow" onclick=onClickCheckBox(this)>
+                        <div><input type="radio" name="rosas" id="yellow" onclick=onClickCheckBox(this) value="Rosas amarillas">
                             <label for="rosas amarillas">Rosas amarillas</label>
                         </div>
-                        <div> <input type="radio" name="rosas" id="white" onclick=onClickCheckBox(this)>
+                        <div> <input type="radio" name="rosas" id="white" onclick=onClickCheckBox(this) value="Rosas blancas">
                             <label for="rosas blancas">Rosas blancas</label>
                         </div>
-                        <div> <input type="radio" name="rosas" id="multicolor" onclick=onClickCheckBox(this)>
+                        <div> <input type="radio" name="rosas" id="multicolor" onclick=onClickCheckBox(this) value="Rosas multicolor">
                             <label for="rosas multicolor">Rosas multicolor</label>
                         </div>
                     </div>
@@ -68,13 +69,13 @@
                         <div class="color">
                             <input type="color" name="check-color" id="colors">
                             <div>
-                                <input type="checkbox" name="tarjeta" checked><label for="tarjeta">Tarjeta</label>
+                                <input type="checkbox" name="check" checked value="tarjeta" id="tajeta"><label for="tarjeta">Tarjeta</label>
                             </div>
                             <div>
-                                <input type="checkbox" name="jarron"><label for="jarron">Jarrón</label>
+                                <input type="checkbox" name="check" value="jarron" id="jarron"><label for="jarron">Jarrón</label>
                             </div>
                             <div>
-                                <input type="checkbox" name="cesta"><label for="cesta">Cesta</label>
+                                <input type="checkbox" name="check" value="cesta" id="cesta"><label for="cesta">Cesta</label>
                             </div>
                         </div>
                     </div>
@@ -89,16 +90,16 @@
                     <div class="datos">
                         <div class="required">
                             <label for="nombre">Nombre:<span>*</span></label>
-                            <input type="text" name="nombre" id="nombre" required>
+                            <input type="text" name="nombre" id="nombre" >
                         </div>
                         <div class="required">
                             <label for="apellidos">Apellidos:<span>*</span></label>
-                            <input type="text" name="apellidos" id="" required>
+                            <input type="text" name="apellidos" id="" >
                         </div>
                         <div class="line">
                             <div class="telefon">
                                 <label for="telefono">Teléfono:<span>*</span></label>
-                                <input type="tel" name="telefono" id="" required>
+                                <input type="tel" name="telefono" id="" >
                             </div>
                             <div>
                                 <label for="email">Email:</label>
@@ -112,37 +113,37 @@
                     <div class="datos">
                         <div class="required">
                             <label for="nombre">Nombre:<span>*</span></label>
-                            <input type="text" name="nombre" id="nombre" required>
+                            <input type="text" name="nombre" id="nombre" >
                         </div>
                         <div class="required">
                             <label for="apellidos">Apellidos:<span>*</span></label>
-                            <input type="text" name="apellidos" id="" required>
+                            <input type="text" name="apellidos" id="" >
                         </div>
                         <div class="line">
                             <div>
                                 <label for="addres">Dirección de envío:<span>*</span></label>
-                                <input type="text">
+                                <input type="text" name="direccion">
                             </div>
                             <div>
                                 <label for="">Código postal:<span>*</span></label>
-                                <input type="number">
+                                <input type="number" name="codigo">
                             </div>
                         </div>
                         <div class="line">
                             <div><label for="">Población:<span>*</span></label>
-                                <input type="text">
+                                <input type="text" name="city">
                             </div>
                             <div><label for="">Provincia:<span>*</span></label>
-                                <input type="text">
+                                <input type="text" name="place">
                             </div>
                         </div>
                         <div class="line">
                             <div><label for="fecha">Fecha de entrega:<span>*</span></label>
-                                <input type="date">
+                                <input type="date" name="date">
                             </div>
                             <div>
                                 <label for="tiempo">Horario de entrega:</label>
-                                <select name="" id="">
+                                <select name="time" id="">
                                     <option value="Mañana">Mañana</option>
                                     <option value="Tarde">Tarde</option>
                                 </select>
@@ -156,19 +157,19 @@
                         <label for="pagos">Elige la forma de pago:</label>
                         <div class="line">
                             <div class="space">
-                                <input type="radio" name="paypal" id="paypal">
+                                <input type="radio" name="select[]" id="paypal">
                                 <label for="">Paypal</label>
                             </div>
                             <div class="space">
-                                <input type="radio" name="tarjeta" id="tarjeta">
+                                <input type="radio" name="select[]" id="tarjeta">
                                 <label for="">Tarjeta</label>
                             </div>
                         </div>
                     </div>
                 </fieldset>
                 <div class="botones">
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Borrar</button>
+                    <input type="submit" value="Enviar" name="submit">
+                    <input type="reset">
                 </div>
             </form>
         </div>
